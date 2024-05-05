@@ -19,7 +19,8 @@ Execute the C Program for the desired output.
 
 # PROGRAM:
 
-## 1.To Write a C program that illustrates files copying 
+## 1.To Write a C program that illustrates files copying
+
 ```
 #include <unistd.h>
 #include <sys/stat.h>
@@ -36,11 +37,14 @@ while((nread = read(in,block,sizeof(block))) > 0)
 write(out,block,nread);
 exit(0);}
 ```
+
 ## OUTPUT
 ```
 -rwxr-xr-x    1 root     root         18348 Apr 17 14:14 file.o
 ```
+
 ## 2.To Write a C program that illustrates files locking
+
 ```
 #include <fcntl.h>
 #include <stdio.h>
@@ -80,9 +84,11 @@ close (fd);
 return 0;
 }
 ```
+
 ## OUTPUT
 ```
 -rwxr-xr-x    1 root     root         18376 Apr 17 14:20 text.o
 ```
+
 # RESULT:
 The programs are executed successfully.
